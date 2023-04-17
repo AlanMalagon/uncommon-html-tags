@@ -13,7 +13,7 @@ const links = [
     label: "Examples",
   },
   {
-    href: "/",
+    href: "/about",
     label: "About",
   },
 ];

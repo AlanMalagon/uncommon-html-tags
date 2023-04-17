@@ -19,7 +19,7 @@ export default function Home() {
         href="/examples/datalist"
         className="mt-6 p-2 rounded bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-lg shadow-pink-500/40 hover:shadow-pink-500/50 hover:scale-105 transition-transform hover:bg-gradient-to-l"
       >
-        Take a look 👉
+        Take a look 🔍
       </Link>
     </main>
   );
