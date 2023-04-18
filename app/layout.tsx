@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-screen bg-gradient-to-r from-slate-950  to-pink-950">
+      <body className="h-screen bg-gradient-to-r from-slate-950 to-pink-950">
         <Header />
         {children}
       </body>

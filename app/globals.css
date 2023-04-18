@@ -10,6 +10,30 @@ body {
   .project-name {
     @apply font-extrabold bg-gradient-to-r from-pink-500 to-fuchsia-500 bg-clip-text text-transparent text-shadow-pink-500/30;
   }
+
+  /* Mobile-first menu styles */
+  .menu {
+    @apply /* Visibility handling */
+    absolute top-14 left-0 opacity-0 invisible
+    /* Animation config */
+    transition duration-300 delay-75
+    /* Styles to apply when input is checked */
+    peer-checked:top-14 peer-checked:opacity-100 peer-checked:visible
+    /* Spacing */
+    w-full h-[calc(100vh-theme(spacing.14))] px-5  
+    /* Flexbox */
+    flex flex-col flex-1 gap-8
+    /* Colors */
+    bg-gradient-to-b from-transparent to-slate-950 to-15%
+    /* 4k text size */
+    3xl:text-2xl;
+  }
+
+  @media screen(md) {
+    .menu {
+      @apply relative flex-row top-0 pl-8 bg-none opacity-100 h-auto peer-checked:top-0 visible;
+    }
+  }
 }
 
 @layer utilities {
