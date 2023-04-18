@@ -14,17 +14,18 @@ const links = [
 
 const Header = () => {
   return (
-    <header className="sticky w-full h-14 top-0 flex place-items-center px-4">
+    <header className="sticky w-full h-14 top-0 flex place-items-center px-4 3xl:h-20">
       <Link
         href="/"
-        className="text-sm project-name text-shadow-pink-500/75 md:pr-8  md:text-lg md:border-r md:border-slate-800"
+        className="text-sm project-name text-shadow-pink-500/75 md:pr-8  md:text-lg md:border-r md:border-slate-800 
+        3xl:text-3xl 3xl:ml-4"
       >
         <p className="hidden md:block">{metadata.title}</p>
         {/* Menu icon */}
         <p className="block text-4xl md:hidden">&#9776;</p>
       </Link>
 
-      <div className="hidden md:flex flex-1 gap-8 pl-8">
+      <div className="hidden md:flex flex-1 gap-8 pl-8 3xl:text-2xl">
         {links.map(({ href, label }) => (
           <Link
             key={href}
