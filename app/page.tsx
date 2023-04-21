@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="h-5/6 px-8 flex flex-col justify-center items-center">
+    <main className="full-height px-8 flex flex-col justify-center items-center">
       <h1 className="py-1 text-5xl project-name text-center md:text-7xl 3xl:text-9xl">
         Uncommon HTML Tags
       </h1>
