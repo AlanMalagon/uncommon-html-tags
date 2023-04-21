@@ -14,11 +14,9 @@ body {
   /* Mobile-first menu styles */
   .menu {
     @apply /* Visibility handling */
-    absolute top-14 left-0 opacity-0 invisible
+    absolute top-14 left-0 opacity-0
     /* Animation config */
     transition duration-300 delay-75
-    /* Styles to apply when input is checked */
-    peer-checked:top-14 peer-checked:opacity-100 peer-checked:visible
     /* Spacing */
     w-full h-[calc(100vh-theme(spacing.14))] px-5  
     /* Flexbox */
