@@ -43,13 +43,15 @@ const Header = () => {
       </label>
 
       {/* Menu Container for both Desktop and Mobile */}
-      <div className={`menu ${menuOpen ? " opacity-100" : ""}`}>
+      <div
+        className={`menu ${
+          menuOpen ? " translate-x-0" : "-translate-x-full"
+        } md:translate-x-0`}
+      >
         {/* Mobile Home Link */}
         <Link
           href="/"
-          className={`project-name text-shadow-pink-500/75 md:hidden ${
-            menuOpen ? "visible" : "invisible"
-          }`}
+          className={`project-name text-shadow-pink-500/75 md:hidden`}
           onClick={handleMenuClose}
         >
           {PageName}
@@ -58,9 +60,7 @@ const Header = () => {
           <Link
             key={href}
             href={href}
-            className={`text-white hover:text-pink-300 transition-colors md:visible ${
-              menuOpen ? "visible" : "invisible"
-            }`}
+            className={`text-white hover:text-pink-300 transition-colors`}
             onClick={handleMenuClose}
           >
             {label}

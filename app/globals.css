@@ -18,9 +18,9 @@ body {
   /* Mobile-first menu styles */
   .menu {
     @apply /* Visibility handling */
-    absolute top-14 left-0 opacity-0
+    absolute top-14 left-0
     /* Animation config */
-    transition duration-300 delay-75
+    transition duration-300
     /* Spacing */
     w-full full-height px-5  
     /* Flexbox */

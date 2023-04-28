@@ -17,9 +17,9 @@ const CodeViewer: FC<{ children: ReactNode; ariaLabel: string }> = ({
   return (
     <pre
       aria-label={ariaLabel}
-      className="p-2 rounded bg-slate-800 overflow-scroll text-white text-xs"
+      className="p-4 overflow-scroll text-white text-xs"
     >
-      <code className="html">{children}</code>
+      <code className="html rounded">{children}</code>
     </pre>
   );
 };
