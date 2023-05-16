@@ -9,7 +9,7 @@ import xml from "highlight.js/lib/languages/xml";
 // Code formatting.
 import { renderToStaticMarkup } from "react-dom/server";
 import htmlParser from "prettier/parser-html";
-import prettier from "prettier";
+import prettier from "prettier/standalone";
 
 hljs.registerLanguage("html", xml);
 
