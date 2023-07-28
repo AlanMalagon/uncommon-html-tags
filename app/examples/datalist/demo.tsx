@@ -1,13 +1,16 @@
 const Demo = () => (
   <>
-    <label htmlFor="favorite-anime-input" className="text-pink-300">
+    <label
+      htmlFor="favorite-anime-input"
+      className="text-2xl text-pink-300"
+    >
       Favorite anime:
     </label>
     <input
       list="favorite-anime-list"
       id="favorite-anime-input"
       name="favorite-anime-input"
-      className="h-11 px-1 rounded md:w-64 md:h-auto"
+      className="text-xl px-0.5 rounded outline-pink-400"
     />
 
     <datalist id="favorite-anime-list">
