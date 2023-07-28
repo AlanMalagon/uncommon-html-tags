@@ -19,13 +19,13 @@ const CodeViewer: FC<{
   className: string;
 }> = ({ children, ariaLabel, className }) => {
   useEffect(() => {
-    hljs.initHighlighting();
+    hljs.highlightAll();
   }, []);
 
   return (
     <pre
       aria-label={ariaLabel}
-      className="p-4 overflow-scroll text-white text-xs"
+      className="p-4 overflow-auto text-white text-xs"
     >
       <code className={`html rounded ${className}`}>
         {prettier.format(renderToStaticMarkup(children as ReactElement), {
@@ -34,7 +34,6 @@ const CodeViewer: FC<{
           htmlWhitespaceSensitivity: "ignore",
           printWidth: 60,
         })}
-        ;
       </code>
     </pre>
   );
