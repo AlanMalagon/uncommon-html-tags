@@ -1,12 +1,13 @@
 import CodeViewer from "@/components/CodeViewer/CodeViewer";
 import React from "react";
 import Demo from "./demo";
+import Title from "@/components/Title";
 
 const DataList = () => {
   return (
     <main className="p-2">
       <section className="text-white [&>p]:px-4 [&>p]:py-1">
-        <h1 className="project-name text-2xl">{`<datalist>`}</h1>
+        <Title>Datalist</Title>
         <p className="">
           The datalist element is quite useful, you can create a
           dropdown-like interaction without having to use JS or any
@@ -19,7 +20,7 @@ const DataList = () => {
         </p>
       </section>
       <section>
-        <h1 className="project-name text-2xl w-full">Example</h1>
+        <Title variant="h2">Example</Title>
         <div className="flex flex-col gap-2 p-4 md:flex-row">
           <Demo />
         </div>
