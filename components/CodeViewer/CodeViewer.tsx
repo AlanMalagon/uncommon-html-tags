@@ -34,7 +34,7 @@ const CodeViewer: FC<{
   return (
     <pre
       aria-label={ariaLabel}
-      className="p-4 overflow-auto text-white text-xs"
+      className="p-4 overflow-auto text-white text-xs xl:text-lg"
     >
       <code className={`html rounded ${className}`}>{formatedCode}</code>
     </pre>
