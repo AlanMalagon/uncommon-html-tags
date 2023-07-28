@@ -20,6 +20,7 @@ const CodeViewer: FC<{
 }> = ({ children, ariaLabel, className }) => {
   useEffect(() => {
     hljs.highlightAll();
+    hljs.configure({ ignoreUnescapedHTML: true });
   }, []);
 
   const codeContent = renderToString(children as ReactElement);
