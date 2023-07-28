@@ -6,7 +6,7 @@ const ExamplesLayout: FC<{ children: ReactNode }> = ({ children }) => {
       <nav className="bg-white bg-opacity-20 md:w-1/3">
         <h1 className="text-white p-2">Examples</h1>
       </nav>
-      <section className="bg-white bg-opacity-20 md:w-2/3">
+      <section className="bg-white bg-opacity-20 md:w-2/3 xl:text-xl">
         {children}
       </section>
     </div>
