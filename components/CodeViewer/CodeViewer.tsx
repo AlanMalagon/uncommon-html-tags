@@ -22,22 +22,20 @@ const CodeViewer: FC<{
     hljs.highlightAll();
   }, []);
 
-  const codeContent = prettier.format(
-    renderToString(children as ReactElement),
-    {
-      parser: "html",
-      plugins: [htmlParser],
-      htmlWhitespaceSensitivity: "ignore",
-      printWidth: 60,
-    }
-  );
+  const codeContent = renderToString(children as ReactElement);
+  const formatedCode = prettier.format(codeContent, {
+    parser: "html",
+    plugins: [htmlParser],
+    htmlWhitespaceSensitivity: "ignore",
+    printWidth: 60,
+  });
 
   return (
     <pre
       aria-label={ariaLabel}
       className="p-4 overflow-auto text-white text-xs"
     >
-      <code className={`html rounded ${className}`}>{codeContent}</code>
+      <code className={`html rounded ${className}`}>{formatedCode}</code>
     </pre>
   );
 };
