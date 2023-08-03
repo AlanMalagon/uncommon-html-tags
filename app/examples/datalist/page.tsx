@@ -20,7 +20,11 @@ const DataList = () => {
             with most of the common ones like Chrome, Firefox, Safari, and
             Edge.
           </li>
-          <li>It is not CSS-customizable.</li>
+          <li>
+            It is not CSS-customizable. You can customize the input but the
+            list will keep the same appearance, although it will change its
+            look depending on the browser.
+          </li>
         </ul>
       </section>
       <section>
