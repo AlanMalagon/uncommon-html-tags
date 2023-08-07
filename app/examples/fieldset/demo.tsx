@@ -1,26 +1,22 @@
 const Demo = () => (
-  <>
-    <label
-      htmlFor="favorite-anime-input"
-      className="text-2xl text-pink-300"
-    >
-      Favorite anime:
-    </label>
-    <input
-      list="favorite-anime-list"
-      id="favorite-anime-input"
-      name="favorite-anime-input"
-      className="text-xl px-0.5 rounded outline-pink-400"
-    />
+  <fieldset className="border p-5 rounded-md flex flex-col flex-grow">
+    <legend className="text-3xl text-pink-300 px-2">
+      Milshake Flavor
+    </legend>
 
-    <datalist id="favorite-anime-list">
-      <option value="Haikyuu" />
-      <option value="My Hero Academia" />
-      <option value="Full Metal Alchemist" />
-      <option value="Attack On Titan" />
-      <option value="Sesame Street" />
-    </datalist>
-  </>
+    <label className="text-white flex gap-1">
+      <input type="radio" name="flavor" value="chocolate" />
+      Chocolate
+    </label>
+    <label className="text-white flex gap-1">
+      <input type="radio" name="flavor" value="strawberry" />
+      Strawberry
+    </label>
+    <label className="text-white flex gap-1">
+      <input type="radio" name="flavor" value="vanilla" />
+      Vanilla
+    </label>
+  </fieldset>
 );
 
 export default Demo;

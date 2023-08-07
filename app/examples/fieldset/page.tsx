@@ -3,27 +3,31 @@ import React from "react";
 import Demo from "./demo";
 import Title from "@/components/Title";
 
-const DataList = () => {
+const Fieldset = () => {
   return (
     <main className="p-2">
       <section className="text-white [&>ul]:px-12 [&>p]:px-4 [&>p]:py-1">
-        <Title>Datalist</Title>
+        <Title>Fieldset</Title>
         <p>
-          The datalist element is quite useful, you can create a
-          dropdown-like interaction without having to use JS or any
-          component library.
+          Good to group related inputs as well as to give them a title.
         </p>
+        <p>Pros of this tag:</p>
+        <ul className="list-disc">
+          <li>
+            Shows by default a nice visuals of border and title (if
+            accompanied by a <code>{`<legend>`}</code> tag)
+          </li>
+          <li>
+            Can be nested inside the <code>{`<form>`}</code> tag
+          </li>
+          <li>The disable attribute applies to all its content</li>
+        </ul>
         <p>Downsides of this tag:</p>
         <ul className="list-disc">
           <li>
-            Not completely compatible with all browsers, it will work fine
-            with most of the common ones like Chrome, Firefox, Safari, and
-            Edge.
-          </li>
-          <li>
-            It is not CSS-customizable. You can customize the input but the
-            list will keep the same appearance, although it will change its
-            look depending on the browser.
+            Can lose the default visuals if used with CSS library, like in
+            this project, since I am using Tailwind, the border was not
+            there initially and I had to put it manually
           </li>
         </ul>
       </section>
@@ -32,7 +36,7 @@ const DataList = () => {
         <div className="flex flex-col gap-2 p-4 md:flex-row">
           <Demo />
         </div>
-        <CodeViewer ariaLabel="datalist-example" className="break-words">
+        <CodeViewer ariaLabel="fieldset-example" className="break-words">
           <Demo />
         </CodeViewer>
       </section>
@@ -40,4 +44,4 @@ const DataList = () => {
   );
 };
 
-export default DataList;
+export default Fieldset;
