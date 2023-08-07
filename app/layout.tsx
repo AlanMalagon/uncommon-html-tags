@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-screen bg-gradient-to-r from-slate-950 to-pink-950">
+      <body className="h-screen bg-gradient-to-r from-slate-950 to-pink-950 md:flex md:flex-col md:items-center">
         <Header />
         {children}
       </body>
