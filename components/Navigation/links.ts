@@ -1,10 +1,11 @@
+const EXAMPLES_ROUTE = "/examples";
 export const ExamplesLinks = [
   {
     name: "Datalist",
-    href: "/examples/datalist",
+    href: `${EXAMPLES_ROUTE}/datalist`,
   },
   {
     name: "Fieldset",
-    href: "/examples/fieldset",
+    href: `${EXAMPLES_ROUTE}/fieldset`,
   },
 ];
