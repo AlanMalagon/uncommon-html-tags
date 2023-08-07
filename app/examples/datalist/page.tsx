@@ -5,7 +5,7 @@ import Title from "@/components/Title";
 
 const DataList = () => {
   return (
-    <main className="p-2">
+    <article className="p-2">
       <section className="text-white [&>ul]:px-12 [&>p]:px-4 [&>p]:py-1">
         <Title>Datalist</Title>
         <p className="">
@@ -36,7 +36,7 @@ const DataList = () => {
           <Demo />
         </CodeViewer>
       </section>
-    </main>
+    </article>
   );
 };
 
