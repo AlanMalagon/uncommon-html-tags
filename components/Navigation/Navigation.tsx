@@ -6,7 +6,7 @@ import { ExamplesLinks } from "./links";
 const Navigation = () => {
   const pathname = usePathname();
   return (
-    <nav className="p-2 flex flex-col md:w-1/3 md:text-xl">
+    <nav className="sticky top-0 p-2 flex flex-col md:w-1/3 md:text-xl">
       <h1 className="text-white  font-bold mb-4">Examples</h1>
       {ExamplesLinks.map((link) => {
         const isActive = pathname === link.href;
